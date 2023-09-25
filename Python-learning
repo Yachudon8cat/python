@@ -1,0 +1,348 @@
+
+'''
+print ('Hello Ali')
+ input output in Python
+ We get output in Python by using the fun
+ 'print'
+e.g. 
+x= 10 
+print (x)
+output should be 10.
+
+x= Ali
+print (x)
+output should be Ali
+x=100
+y= 200
+z= 300
+print(x, y, z)
+Output should be 100 200 300
+
+-----------------------------------
+
+Use of Comma(,) to print more than one output
+e.g.
+print ('Hello 1, 'Hello 2', 'Hello 3')
+output should be 
+Hello1, Hello 2 Hello 3
+
+We use separater function (sep) in Python to
+separate more than one output
+e.g.
+print ('Hello 1, 'Hello 2', 'Hello 3', sep= '~#~)
+the output should be 
+Hello 1 ~#~ Hello 2~#~ Hello 3
+
+----------------------------------
+
+Output via print is printed in next line 
+e.g.
+
+print ('Hello 1, 'Hello 2', 'Hello 3)
+but if you want to the output to be printed one after the other
+in a single line, use function (end= '=')
+the output should be 
+e.g. 
+print ('Hello 1' , end= '=')
+print ('Hello 2' , end= '=')
+print ('Hello 3' , end= '=')
+
+Hello 1 = Hello 2 = Hello=3
+
+
+print ('Hello 1' , end = ' = ')
+print ('Hello 2' , end = '= ')
+print ('Hello 3' , end = '= ')
+
+----------------------------------------
+
+Printing out name and nationality of a person
+We use function (name) and (country)
+
+e.g
+name = 'Ali'
+country = 'Pakistan'
+print( 'My name is' ,name, ' I am from', country)
+ 
+Output should be
+My name is Ali  I am from Pakistan
+
+Now, in order to put 'and' in the above sentence
+to make it sound correct we use (+) before the 
+two functions name and country.
+
+e.g. 
+
+name = 'Ali'
+country = 'Pakistan'
+print( 'My name is' ,+name, ' I am from', +country)
+ 
+
+print("Hello 1" , end = ' = ')
+print("Hello 2" , end = ' = ')
+print("Hello 3" , "Hello 4")
+print("Hello" , "Hi")
+
+
+Use of 'name' and 'country' function.
+name = "Ali"
+country = "Pakistan"
+print("My name is", name, "and I am from", country)
+
+---------------------------------------------
+
+How to add string (str) in Python or concatenate or 
+link together in a chain or series.
+We use + sign before the fucntion 'name' and 'country'
+e.g
+
+name = "Ali"
+country = "Pakistan"
+print("My name is "+name+ " and I am from "+country)
+
+How to print out age:We use str function to convert string into int.
+e.g.
+str(age)
+
+such as;
+
+name = "Ali"
+country = "Pakistan"
+age = 20
+print("My name is "+name+ " and my age is "+str(age),"years")
+ 
+ However, there is another way to concatenate/link or change typ
+ We format by using 'f' before the entire sentence and 
+ by putting the variable 'name' and 'age' etc. between
+ {} two brackets.
+
+ such as 
+print(f"My name is {name} and my age is {age} years")
+variable between {} i.e., name and age are considered to be the 
+actual value of the variable which are between {}
+
+ e.g.
+name = "Ali"
+country = "Pakistan"
+age = 20
+#print("My name is "+name+ " and my age is "+str(age),"years")
+print(f"My name is {name} and my age is {age} years.")
+
+------------------------------------------------
+
+INPUT IN PYTHON:
+To take input from the users/conversation etc. 
+We use variable 'input' in Python to take input.
+
+such as;
+name = input ("Please enter your name")
+print(name)
+e.g.
+
+name = input ("Please enter your name: ")
+print(f"Your name is {name}")
+#find out the type of variable 'name'
+print( type(name))
+
+Suppose we want to add two value x and y we have to take input 
+from the user, use 'input' variable and then to get the right print
+we will convert the string into integer. 
+Such as;
+x = (input ("Please enter x:"))
+y = (input ("Please enter y:"))
+z = x + y
+print(f"Sum of {x} and {y} is {z}")
+
+The input will be:
+Sum of 10 and 20 is 1020 (which is wrong so here
+we have to convert the string x and y into integer or numbers)
+So we do the following
+
+x = int(input ("Please enter x:"))
+y = int(input ("Please enter y:"))
+z = x + y
+print(f"Sum of {x} and {y} is {z}")
+
+So, when we want input from the user, we have to remember that 
+input is alawys in string format and if we want 
+to do mathematical exercise, we need to convert 
+string into integer as we did in the above example.
+
+
+
+x = input ( “Enter your name ”)
+age = int(input ( “Enter your age”))
+price = float(input ( “Enter the price”))
+
+-----------------------------------
+
+PYTHON DATA TYPES 
+1. Numbers 
+2. Boolean type
+3. String
+4. List
+5. Tuple
+6. Set
+7. Dictionary
+
+
+1. Numbers: In Python numbers there are three parts i.e.,
+interger, float and complex.
+
+Integer and Float
+E.g. 
+age = 20 (integer)
+x = 30.4 (float)
+
+If we want to find out the type of the number we
+use the following syntax
+print (type(age))
+
+age = 20 
+x = 30.4 
+y = "600"
+
+#If we want to find out the type of the number we
+#use the following syntax
+print (type(x))
+print( type(age))
+print( type(y))
+
+output:
+<class 'float'>
+<class 'int'>
+<class 'str'>
+
+Complex Number: This data type (number) include
+both numbers and alphabats 
+such as
+x = 5 +10j
+print(x)
+print(type(x))
+
+output should be:
+(5+10j)
+<class 'complex'>
+ -------------------------
+BOOLEAN Data Type:
+
+
+
+a = '123'
+b = int(a) + 1
+print(b)
+name = input('Enter:')
+print(name)
+apple= input('Enter:')
+print(apple)
+fruit = 'banana'
+x = len (fruit)
+print(x)
+
+Complex numbers
+there are two parts in complex Real part and Imaginary part
+Python only deals with Real number;
+Such as 
+
+a = 5 + 10j
+print (a)
+a = 5 + 10j
+print (a)
+print(type(a))
+
+x = bool ()
+print(x)
+
+is_raining = True
+
+if is_raining:
+  print("It is raining.")
+else:
+  print("It is not raining.")
+
+  if is_raining:
+  print("It is raining.")
+else:
+  print("It is not raining.")
+
+is_rainy_day = is_raining and is_cold
+
+if is_rainy_day:
+  print("It is a rainy day.")
+else:
+  print("It is not a rainy day.")
+
+
+  # Boolean values
+is_raining = True
+is_night = False
+
+# Boolean expressions
+1 + 1 == 2  # True
+"hello" == "world"  # False
+
+# Logical operations
+is_raining and is_night  # False
+is_raining or is_night  # True
+not is_night  # True
+
+# Conditional statements
+if is_raining:
+  print("It is raining.")
+else:
+  print("It is not raining.")
+
+if is_night and is_raining:
+  print("It is a rainy night.")
+else:
+  print("It is not a rainy night.")
+
+
+#bool function: it has a few condition wherein it gives result accord
+#to the condition such as 
+#print(bool("")) the answer will be False since its an empty cell
+#print(bool("Ali")) True
+#print(bool(0))     False other than 0 any value will be True
+#print(bool(5))     True
+#print(bool(None))  False,none itsel is False
+#print(bool("Ali", "Sher , Taha")) True, any value or str is True
+#print(bool([]))    False empty cases report False.
+
+#function- it also return boolean
+#such as 
+def myfunction():
+    return False
+print("Print Function's Result")
+print(myfunction())
+
+
+
+#Get address and zip code using Python
+#pip install geopy
+
+from geopy.geocoders import Nominatim
+#create the geolocator object with a suer-agent
+geolocator = Nominatim(user_agent= "geopiExercises")
+#get the city from the user
+place = input("Enter City Name: ")
+#geocode the loction
+location = geolocator.geocode(place)
+#print the geolocation detials
+print(location)
+
+#How to download online videos (Youtube) in Python
+
+import yt_dlp
+
+#Enter the url for the download 
+url = input("Enter url of the video: ")
+
+ydl_opts = {}
+
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    ydl.download([url])
+
+print("video downloaded successfully")
+
+ '''
+
