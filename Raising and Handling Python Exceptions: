@@ -1,0 +1,25 @@
+def divide(x, y):
+  """Divides two numbers.
+
+  Args:
+    x: A number.
+    y: A number.
+
+  Returns:
+    The result of dividing x by y.
+  """
+
+  try:
+    return x / y
+  except ZeroDivisionError:
+    print("Cannot divide by zero.")
+    return None
+
+
+# Example usage:
+
+result = divide(10, 2)
+print(result)
+
+result = divide(10, 0)
+print(result)
